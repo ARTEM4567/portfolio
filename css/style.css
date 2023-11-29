@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(231, 231, 231, 0.95);
+    cursor: none;
+    transition: .3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url('../img/gradient-light-min.png');
+    background-size: 1900px;
+    background-position: center -250px;
+    background-repeat: no-repeat;
+    background-color: black;
+    position: relative;
+    transition: .3s;
+}
+
+main{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.language{
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    background-image: url('/img/internet.png');
+}
+
+nav a{
+    font-size: 20px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.592);
+    transition: .2s;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top p{
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 500;
+    border: solid 2px rgba(231, 231, 231, 0.9);
+    border-radius: 24px;
+    padding: 3px 10px;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.contacts{
+    min-width: fit-content;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contacts a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.contacts a:last-child{
+    margin: 0;
+}
+
+.contacts img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: rgba(255, 255, 255, 0.3) 2px solid;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side, .right-side{
+    width: 48%;
+}
+
+.info h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.about-me, .competensies, .languages{
+    padding: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.about-me p{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.competensies p, .languages p{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.competensies p span, .languages p span{
+    color: rgba(231, 231, 231, 0.5);
+    font-size: 16px;
+}
+
+.languages{
+    margin-top: 20px;
+}
+
+.projects{
+    margin-top: 100px;
+}
+
+.projects h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pojects-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    padding: 20px 10px;
+}
+
+.project:hover .project-name{
+    opacity: 1;
+}
+
+.project .img{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 25px;
+    aspect-ratio: 16 / 9;
+}
+
+.project-name{
+    opacity: 0;
+    display: flex;
+    font-size: 70px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 25px;
+    border-radius: 20px;
+}
+
+.project-description{
+    color: rgba(231, 231, 231, 0.7);
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+#magicMouseCursor{
+    border-radius: 20px !important;
+}
+
+body #magicPointer.is-hover {
+    background: RGB(153, 65, 240);
+}
+
+@media (max-width: 1186px){
+    .pojects-list{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-size: 1200px;
+        background-position: center -150px;
+    }
+}
+
+@media (max-width: 700px){
+    .contacts{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contacts a{
+        margin: 0;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .left-side, .right-side{
+        width: 100%;
+    }
+
+    .right-side{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    h1{
+        font-size: 70px;
+    }
+}
